@@ -1,0 +1,61 @@
+{
+	"name": "multilint",
+	"displayName": "MultiLint",
+	"description": "",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.31.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.multiLint"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.multiLint",
+				"title": "Analize multi languages",
+				"category": "Lint"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "Multi Lint configuration",
+			"properties": {
+				"multilint.linters": {
+					"type": "object",
+					"properties": {
+						"ruby": {
+							"type": "string",
+							"default": "rubocop"
+						},
+						"coffeescript": {
+							"type": "string",
+							"default": "coffeelint"
+						}
+					},
+					"default": {
+						"ruby": "rubocop",
+						"coffeescript": "coffeelint"
+					},
+					"description": "Setup linters."
+				}
+			}
+		}
+
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.28",
+		"eslint": "^5.13.0",
+		"@types/node": "^10.12.21",
+		"@types/mocha": "^2.2.42"
+	}
+}
