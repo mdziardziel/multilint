@@ -1,7 +1,7 @@
 {
-	"name": "multilint",
-	"displayName": "MultiLint",
-	"description": "",
+	"name": "mlint",
+	"displayName": "Multi Lint",
+	"description": "Lint multiple files using one command",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.31.0"
@@ -10,17 +10,22 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.multiLint"
+		"onCommand:extension.mlint"
 	],
 	"main": "./extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.multiLint",
+				"command": "extension.mlint",
 				"title": "Analize multi languages",
 				"category": "Lint"
 			}
 		],
+		"keybindings": [{
+			"command": "extension.mlint",
+			"key": "ctrl+l",
+			"mac": "cmd+l"
+		}],
 		"configuration": {
 			"type": "object",
 			"title": "Multi Lint configuration",
