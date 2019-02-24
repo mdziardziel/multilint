@@ -30,7 +30,7 @@
 			"type": "object",
 			"title": "Multi Lint configuration",
 			"properties": {
-				"multilint.linters": {
+				"mlint.linters": {
 					"type": "object",
 					"properties": {
 						"ruby": {

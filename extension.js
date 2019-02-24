@@ -4,7 +4,7 @@ const vscode = require('vscode');
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
-	var configuration = vscode.workspace.getConfiguration('multilint');
+	var configuration = vscode.workspace.getConfiguration('mlint');
 	var linters = configuration.linters;
 
 	let disposable = vscode.commands.registerCommand('extension.mlint', function () {
