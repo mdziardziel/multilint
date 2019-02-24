@@ -1,6 +1,6 @@
-# multilint README
+# Multi Lint README
 
-Welcome! You are reading README for Multi Lint extension;
+Welcome! You are reading README for Multi Lint extension.
 
 ## Features
 
@@ -20,6 +20,12 @@ Default pairs of languages and linters:
 You can connect any recognizing by VsCode language with any linter you want. 
 Just read `Extension Settings` 
 
+## How it works?
+* copy active file path
+* recognize active file language 
+* if language is recognized, and linter is defined,
+    then run `linter path` in terminal
+
 ## Requirements
 
 If you set in settings some linter, it is clear that you must have this linter installed :)
@@ -28,12 +34,12 @@ If you set in settings some linter, it is clear that you must have this linter i
 
 You can override languages and setting by overriding ~/.vscode/settings.json for example with:
 
-{
-    "mlint": {
-        "javascript": "js-linter",
-        "python": "python-linter"
-    }
-}
+`{`
+`    "mlint": {`
+`        "javascript": "js-linter",`
+`        "python": "python-linter"`
+`    }`
+`}`
 
 ## Known Issues
 
