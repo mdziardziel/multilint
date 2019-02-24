@@ -32,10 +32,11 @@ If you set in settings some linter, it is clear that you must have this linter i
 
 ## Extension Settings
 
-You can override languages and setting by overriding ~/.vscode/settings.json for example with:
+You can override languages and setting by overriding settings.json for example with:
+    (file->preferences-> extensions-> multi lint -> edit settings.json) 
 
 `{`
-`    "mlint": {`
+`    "mlint.linters": {`
 `        "javascript": "js-linter",`
 `        "python": "python-linter"`
 `    }`
