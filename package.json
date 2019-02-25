@@ -2,7 +2,7 @@
 	"name": "mlint",
 	"displayName": "Multi Lint",
 	"description": "Lint multiple files using one command",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.31.0"
 	},
