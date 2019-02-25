@@ -1,5 +1,6 @@
 {
 	"name": "mlint",
+	"publisher": "mdziardziel",
 	"displayName": "Multi Lint",
 	"description": "Lint multiple files using one command",
 	"version": "1.0.0",
