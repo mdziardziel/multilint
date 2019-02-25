@@ -42,6 +42,8 @@ You can override languages and setting by overriding settings.json for example w
 `    }`
 `}`
 
+Attention! After overritting settings you should disable and enable extension.
+
 ## Known Issues
 
 There is no one know issue;
